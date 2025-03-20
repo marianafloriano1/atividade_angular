@@ -1,0 +1,53 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-5">
+        <div class="card shadow-lg border-info">
+          <div class="card-header text-info text-center">
+            <h4>Calculadora de Números</h4>
+          </div>
+          <div class="card-body border-info">
+            <div class="row">
+              <div class="col-md-4">
+                <input 
+                  type="number" 
+                  class="form-control form-control-lg" 
+                  placeholder="Primeiro número" 
+                  [(ngModel)]="num1" 
+                  name="num1"
+                >
+              </div>
+              <div class="col-md-4">
+                <input 
+                  type="number" 
+                  class="form-control form-control-lg" 
+                  placeholder="Segundo número" 
+                  [(ngModel)]="num2" 
+                  name="num2"
+                >
+              </div>
+              <div class="col-md-4">
+                <input 
+                  type="number" 
+                  class="form-control form-control-lg" 
+                  placeholder="Terceiro número" 
+                  [(ngModel)]="num3" 
+                  name="num3"
+                >
+              </div>
+            </div>
+  
+            <div class="text-center mt-3">
+              <button class="btn btn-outline-info btn-lg w-100" (click)="total()">Calcular</button>
+            </div>
+          </div>
+          <div class="card-footer text-info text-center">
+            <h5>Resultado: <span class="fw-bold">{{ resultado }}</span></h5>
+
+            <!--<h5>Maior Número: <span class="fw-bold">{{ resultado }}</span></h5>-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
